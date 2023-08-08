@@ -1,0 +1,53 @@
+//NOTE: 1rem = 10px as defined in bootstrap
+/*colors*/
+$white: #FFF;
+$black: #222;
+$grey: #57575a;
+$medium-grey: #D0D0D0;
+$light-grey: #F9F9F9;
+$red: #e51938;
+$success: #25be5d;
+
+$base-font-size: 1.4rem;
+$line-height: $base-font-size*1.4;
+
+//slider
+$slider-bottom-margin: 30px;
+$anchor-height: 8px;
+
+//menu
+$submenu-width: 25.4rem;
+
+$h1: 2.1875*$base-font-size;
+$h2: 1.40625*$base-font-size;
+$h3: 1.125*$base-font-size;
+$h4: 1.125*$base-font-size;
+$h5: 1.5rem;
+
+@mixin links($link, $visit: $link, $hover: $link, $active: $link) {
+    a {
+        color: $link;
+        text-decoration: none;
+        transition: .2s;
+
+        &:visited {
+            color: $visit;
+        }
+
+        &:hover {
+            color: $hover;
+        }
+
+        &:active {
+            color: $active;
+
+        }
+    }
+}
+
+//screen width for javascript
+html {
+    @media (max-width: 991px) {
+        max-width: 991px;
+    }
+}

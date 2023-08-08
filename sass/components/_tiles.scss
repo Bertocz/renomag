@@ -1,0 +1,121 @@
+.tiles{
+    color: $white;
+    font-size: 1.3rem;
+    overflow: hidden;
+
+    &__image-container {
+        overflow: hidden;
+    }
+
+    &__image{
+        height: 21rem;
+        background-size: cover;
+        background-repeat: no-repeat;        
+        background-position: center;
+        transition: all 0.15s ease-out;
+
+        @media (max-width: 1200px){
+            height: 17rem;
+        }
+        @media (max-width: 991px){
+            height: 27rem;
+        }
+        @media (max-width: 767px){
+            height: 40rem;
+        }
+        @media (max-width: 500px){
+            height: 27rem;
+        }
+        @media (max-width: 400px){
+            height: 23rem;
+        }
+    }
+
+    &__description{
+        width: 100%;
+        min-height: 6.8rem;        
+		padding-bottom: .8rem;
+		padding-top: .8rem;
+		padding-left: 1.6rem;
+		padding-right: 1.6rem;
+		
+        font-size: 1.3rem;        
+        background: $red;
+
+        transition: all 0.15s ease-out;
+    }
+
+    &__description--white{
+        padding-top: 1rem; 
+        line-height: 2.5rem;
+        background: $white;
+        color: $black;
+    }
+
+
+    &__name {
+        margin-top: .8rem;        
+        line-height: $line-height;
+        @include links($white, $white, $white, $white);
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:hover * {
+        color: white;
+    }
+
+    &:hover .tiles__image {
+        transform: scale(1.1);
+    }
+
+    &:hover &__description{
+        background-color: $black;
+    }
+
+}
+
+.tiles--small{
+    margin-bottom: 3rem;
+
+    .tiles__image{
+        height: 16rem;
+
+        @media (max-width: 1200px){
+            height: 20rem;
+        }
+        @media (max-width: 991px){
+            height: 26rem;
+        }
+        @media (max-width: 767px){
+            height: 40rem;
+        }
+        @media (max-width: 500px){
+            height: 26rem;
+        }
+
+        &--smaller{
+            @media (max-width: 1300px){
+                height: 13rem;
+            }
+            @media (max-width: 991px){
+                height: 16rem;
+            }
+            @media (max-width: 767px){
+                height: 20rem;
+            }
+        }
+    }
+
+    .tiles__name{
+        font-size: $h5;
+        line-height: 2.1rem;
+
+        &--smaller{
+            margin-top: .1rem;
+        }
+    }
+
+}

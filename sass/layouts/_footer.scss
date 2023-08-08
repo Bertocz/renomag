@@ -1,0 +1,101 @@
+.footer{
+	background-color: $black;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	font-size: 1.3rem;
+	width: 100%; 
+	padding-left: 6%;
+    padding-right: 6%;
+
+    @media (max-width: 991px){
+        padding-top: 30px;
+        padding-left: 9%;
+    	padding-right: 9%;
+	}
+
+	@media (min-width: 1090px) {
+		padding-top: 80px;
+    }
+
+	&__collapsible {
+		@media (max-width: 991px){
+            display: none; 
+        }
+	}
+
+	&__payment-methods {
+		max-width: 350px;
+		@media (max-width: 767px) {
+			margin-top: 2rem;
+		}
+	}
+
+
+	&__links{	
+		position: relative;		
+		color: rgba($white, 0.7);		
+		min-height: 300px;		
+	}
+
+	&__bottom {
+		margin-top: 2.6rem;
+		display: flex;
+		align-items: flex-end;
+		
+		@media (max-width: 991px ) {
+			display: block;	
+			margin-top: 4rem;	
+		}
+	}
+
+	&__copy {		
+		line-height: 2.1rem;
+
+		@include links($grey,$grey,rgba($white,0.8),$white);
+
+		p {
+			margin-bottom: 0;
+		}
+	}
+
+	&__social {				
+		
+		margin-left: -15px;
+
+		@media (max-width: 991px) {
+			margin-left: 0;
+			margin-top: 1.5rem;
+		}
+
+		a{
+			padding-right: 1rem; 
+		}
+
+		i{
+			color: $white;
+		}	
+	}
+
+	&__sortiment {		
+
+		@media (max-width: 1300px) {
+			display: none;
+		}
+
+		img {
+			width: 95%;
+			max-width: 400px;
+			vertical-align: bottom;
+			@media (min-width: 1200px) {
+				vertical-align: top;
+				max-width: 529px;
+			}
+
+		}
+	}
+	
+
+	strong, b {
+		color: $white;
+	}
+}

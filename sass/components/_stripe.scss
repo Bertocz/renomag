@@ -1,0 +1,25 @@
+.stripe{
+        margin-left: 1.6rem;
+        margin-top: 5.4rem;
+        height: 55px;
+        width: auto;
+         @media (max-width: 991px){
+        margin-left: 0;
+        }
+
+        &__icon{
+            display: inline-block;
+            opacity: .6;
+            cursor: pointer;
+            margin-right: -0.2rem;
+            @media (max-width: 991px){
+        transform: scale(0.8);
+        margin-top: 1rem;
+        margin-right: -1rem;
+        }
+        }
+
+        &__icon:hover{
+            opacity: 1;
+        }
+    }

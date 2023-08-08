@@ -1,0 +1,61 @@
+.header {
+    &__upper {
+        height: 12rem;
+        @media (max-width: 767px){
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__lower {
+        height: 6.2rem;
+
+        @media (max-width: 767px){
+            height: 5.2rem;
+        }
+    }
+
+    &__logo {
+        margin-top: 3rem;
+        margin-right: 2.5rem;
+        float: right;
+        @media (max-width: 767px){
+        float: left;
+        margin-left: 1.7rem;
+        }
+    }
+
+    &__stripe {
+        text-align: left;
+        @media (max-width: 767px){
+        display: none;
+        }
+    }
+
+    &__nav{    
+        @media (max-width: 767px){
+            margin-top: 3rem;
+        }
+        position: relative;    
+        height: 100%;        
+    }
+
+    &__userbar{
+        position: relative;
+        height: 100%;        
+    }
+
+    &__gradient::after{
+        content: "";
+        height: 6rem;
+        width: 100%;
+        background: linear-gradient($light-grey,$white);
+        
+
+    }
+
+    &__gradient{
+        margin-bottom: 0;
+        
+    }
+
+}

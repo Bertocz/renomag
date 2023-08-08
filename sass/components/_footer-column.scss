@@ -1,0 +1,45 @@
+.footer-column{
+	@include links(rgba($white,0.7));
+	color: rgba($white, 0.7);
+	overflow: auto;
+
+	a:hover{
+			opacity: .6;
+	}
+
+	&__category{
+		letter-spacing: 1.5px;
+		margin-bottom: 3rem; 
+		line-height: 2rem;
+		color: $white;
+	}
+
+	&__list{
+		display: block;
+		list-style: none;
+		padding-left: 0;
+		@media (max-width: 991px){            
+            margin-bottom: 3rem;
+        }
+	}
+
+	&__list-item{
+		margin-bottom: 1rem;
+	}
+
+	&__text{
+		line-height: 2.6rem;
+	}
+
+	&--logo {
+		background-size: 0 0;
+
+		@media (min-width: 1600px) {
+			background-size: auto;
+			background-repeat: no-repeat;
+			background-position: 20vw 20px;			
+		}
+	}
+
+
+}

@@ -1,0 +1,142 @@
+.svg-logo {
+    width: 148px;
+    height: 91px;
+}
+
+.svg-social{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin-right: 0.4rem;
+
+    &:hover {
+        opacity: 0.6;
+    }
+    
+    @media (max-width: 767px){
+            width: 30px;
+            height: 30px;        
+        }
+
+}
+
+.svg-search {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+
+}
+
+.svg-cross {
+    width: 16px;
+    height: 16px;
+    stroke: $white;
+    stroke-width: 5;
+
+    @media (min-width: 1090px){
+            display: none;       
+        }
+}
+
+.svg-plus {
+    float: right;
+    width: 14px;
+    height: 13px;
+    stroke: $white;
+    stroke-width: 8;
+
+    @media (min-width: 768px){
+            display: none;       
+        }
+}
+
+.svg-minus {
+    float: right;
+    width: 14px;
+    height: 13px;
+    stroke: $white;
+    stroke-width: 8;
+
+    @media (min-width: 768px){
+            display: none;       
+        }
+}
+
+.svg-plus-menu {
+    //this is span used as icon
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    right: 0;
+
+    span {
+        position: absolute;
+        right: 0;
+        margin-top: 4px;
+        width: 14px;
+        height: 4px;    
+        background-color: $white;
+        transition: transform .5s ease;
+    }
+
+    span:nth-child(2n){
+        transform: rotate(-90deg);
+    }
+
+    z-index: -1;
+    
+    @media (min-width: 1090px){
+            display: none;       
+        }
+
+   &--active{
+       span:nth-child(2n){
+        transform: rotate(0deg);
+       }
+   }     
+}
+
+.svg-plus-footer{
+    //this is span used as icon
+    float: right;
+    width: 14px;
+    height: 14px;
+    right: 0;
+
+    span {
+        position: absolute;
+        right: 0;
+        margin-top: 4px;
+        width: 14px;
+        height: 4px;    
+        background-color: $white;
+        transition: transform .5s ease;
+    }
+
+    span:nth-child(2n){
+        transform: rotate(-90deg);
+    }
+
+    z-index: -1;
+    
+    @media (min-width: 992px){
+            display: none;       
+        }
+
+   &--active{
+       span:nth-child(2n){
+        transform: rotate(0deg);
+       }
+   }     
+}
+
+.svg-hamburger{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin-right: 1.5rem;
+    margin-bottom: -5px;
+    stroke: $grey;
+    stroke-width: 4px;
+
+}

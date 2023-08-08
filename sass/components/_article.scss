@@ -1,0 +1,69 @@
+.article{
+	color: $black;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+
+	&__table{
+		max-width: 100%;
+		overflow-x: auto;
+	}
+
+	&__date{
+		font-size: $h2;
+		font-weight: 700;
+		color: $red;
+		margin-bottom: 2.8rem;
+		margin-top: -2.4rem;
+	}
+
+	&__acknowledgement{
+		font-weight: 700;
+		margin-bottom: 2.8rem;
+	}
+
+	&__image-set{
+		margin-top: 3rem;
+	}
+
+	&__content {
+		max-width: 1200px;
+		
+		@media screen and (min-width: 992px){
+			padding: 0 5rem;
+		}
+	}
+
+	&__content a {
+		color: $red;		
+	}
+
+	&__content a:hover{
+		color: $grey;
+	}
+	&__back {
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: $h2;
+
+		&:focus {
+			text-decoration: none;
+		}
+	}
+}
+
+.quotation{
+		padding: 25px 15px;
+		border: 0;
+		line-height: 2.4rem;
+		text-align: center;
+		font-weight: 700;
+		font-size: $base-font-size*1.2;
+
+		&__author{
+		padding-top: 10px;
+		color: $grey;
+		font-size: $h5;
+		font-weight: 200;
+		font-style: italic;
+		}
+	}

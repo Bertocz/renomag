@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>Renomag e-shop template</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/wallop.css">
+</head>
+
+<body>
+    <div class="wrapper">
+    <header class="container-fluid header">
+            <div class="row header__upper"> 
+                <div class="col-md-8 col-sm-10 col-xs-12 header__stripe">
+                    <div class="stripe">
+                        <div class="stripe__icon lzice-01"></div>
+                        <div class="stripe__icon lzice-02"></div>
+                        <div class="stripe__icon spoj-03"></div>
+                        <div class="stripe__icon rydlo-04"></div>
+                        <div class="stripe__icon pas-05"></div>
+                        <a href="/kladiva.html"><div class="stripe__icon kladivo-06"></div></a>
+                        <div class="stripe__icon pas-07"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-2 col-xs-12">
+                    <svg class="svg-logo header__logo">
+                        <use xlink:href="images/sprite.symbol.svg#logo" />
+                    </svg>
+                </div>
+            </div>    
+            <div class="row header__lower header__gradient">
+                <div class="header__userbar col-md-4 col-md-push-8 col-sm-6 col-sm-push-6 col-xs-12">
+                    <div class="userbar">
+                    <span class="userbar__item userbar__item--active"><i class="icon cart" aria-hidden></i><a href="/cart.1.html"><small>košík</small></a></span>
+                    <span class="userbar__item"><i class="icon user" aria-hidden></i><a href="/login.html"><small>můj účet</small></a></span>
+                    <span class="userbar__item">
+                        <svg class="icon svg-search">
+                            <use xlink:href="images/sprite.symbol.svg#svg-search" />
+                        </svg>
+                    </span>
+                    <span class="userbar__lang"><small>CZ</small></span>
+                    </div>
+                    <div class="search-bar" id="searchBar">
+                        <input class="search-bar__input" type="text">
+                    </div>
+                </div>
+                <nav class="header__nav col-md-8 col-md-pull-4 col-sm-6 col-sm-pull-6  col-xs-12" role="navigation">
+                    <ul class="menu">
+                        <svg class="menu__close svg-cross" id="menuMobileClose" >
+                            <use xlink:href="images/sprite.symbol.svg#cross" />
+                        </svg>
+                        <li class="menu__item"><a href="index.html">Home</a></li>
+                        <li class="menu__item">
+                            Produkty
+                                <span class="svg-plus-menu">
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                        <div class="menu__sub menu__sub--two">
+                            <ul class="submenu">
+                                <li class="submenu__title">dle stroje</li>
+                                <li class="submenu__item">Bargy</li>
+                                <li class="submenu__item">Minibagry</li>
+                                <li class="submenu__item">Nakladače</li>
+                                <li class="submenu__item"><a href="/kladiva.html">Kladiva</a></li>
+                                <li class="submenu__item">Vrtáky</li>
+                                <li class="submenu__item">Vibrační desky</li>
+                                <li class="submenu__showall"><a href="/products.html">zobraz vše</a></li>
+                            </ul>
+                            <ul class="submenu">
+                                <li class="submenu__title">dle práce</li>
+                                <li class="submenu__item">Nakládání</li>
+                                <li class="submenu__item">Řezání a frézování</li>
+                                <li class="submenu__item">Vrtání</li>
+                                <li class="submenu__item">Odvoz</li>
+                                <li class="submenu__item">Lámání cihel</li>
+                                <li class="submenu__item">Ostatní</li>
+                                <li class="submenu__item">Úprava podkladu</li>
+                                <li class="submenu__showall"><a href="/products.html">zobraz vše</a></li>
+                            </ul>
+                        </div>                    
+                        </li>
+                        <li class="menu__item">
+                                Služby
+                               <span class="svg-plus-menu">
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                        <div class="menu__sub">
+                            <ul class="submenu">
+                                <li class="submenu__item">Bargy</li>
+                                <li class="submenu__item">Minibagry</li>
+                                <li class="submenu__item">Nakladače</li>
+                                <li class="submenu__item">Kladiva</li>
+                                <li class="submenu__item">Vrtáky</li>
+                                <li class="submenu__item">Vibrační desky</li>
+                            </ul>                            
+                        </div> 
+                        </li>
+                        <li class="menu__item"><a href="#">Volná místa</a></li>
+                        <li class="menu__item"><a href="#">Kontakt</a></li>                    
+                    </ul>
+                    <ul class="menu--mobile">
+                        <li class="menu__item" id="menuMobileOpen">
+                            <a href="#">
+                                <svg class="svg-hamburger">
+                                    <use xlink:href="images/sprite.symbol.svg#hamburger" />
+                                </svg>
+                                Nabídka
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="container-fluid margin-top">
+            <div class="col-lg-12 shopping-cart">
+
+                <div class="shopping-cart__shopping-process">
+                    <div class="shopping-cart__step col-sm-3 col-xs-12">
+                        <strong class="shopping-cart__step-header"><a href="cart.1.html">krok 1</a></strong>
+                        <span>Nákupní košík</span>
+                    </div>
+                    <div class="shopping-cart__step shopping-cart__step--active col-sm-3 col-xs-12">
+                        <strong class="shopping-cart__step-header"><a href="cart.2.html">krok 2</a></strong>
+                        <span>Vyplnění údajů</span>
+                    </div>
+                    <div class="shopping-cart__step col-sm-3 col-xs-12">
+                        <strong class="shopping-cart__step-header"><a href="cart.3.html">krok 3</a></strong>
+                        <span>Kontrola údajů</span>
+                    </div>
+                    <div class="shopping-cart__step col-sm-3 col-xs-12">
+                        <strong class="shopping-cart__step-header"><a href="cart.4.html">krok 4</a></strong>
+                        <span>Dokončení</span>
+                    </div>
+                </div>
+                <div class="shopping-cart__forms col-lg-10 col-lg-offset-1 col-xs-12">
+                    <h2 class="col-xs-12 form__header">Fakturační údaje</h2>
+                    <div class="form-group">
+                        <div class="col-sm-6 col-xs-12 form__item">
+                            <label class="form__label form__label--required" for="firstName">jméno</label>
+                            <input type="text" class="form-control form__input" id="firstName" pattern="[a-zá-žA-ZÁ-Ž]+">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-6 col-xs-12 form__item">
+                            <label class="form__label form__label--required" for="secondName">příjmení</label>
+                            <input type="text" class="form-control form__input" id="secondName" pattern="[a-zá-žA-ZÁ-Ž]+">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-6 col-xs-12 form__item">
+                            <label class="form__label form__label--required" for="street">ulice</label>
+                            <input type="text" class="form-control form__input" id="street" pattern="[a-zá-žA-ZÁ-Ž\d ]+">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-6 ol-xs-12 form__item">
+                            <label class="form__label form__label--required" for="city">obec</label>
+                            <input type="text" class="form-control form__input" id="city" pattern="[a-zá-žA-ZÁ-Ž ]+">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-2 col-xs-4 form__item">
+                            <label class="form__label form__label--required" for="zip">PSČ</label>
+                            <input type="text" class="form-control form__input" id="zip" pattern="[\d ]+">
+                        </div>
+                        <div class="col-sm-4 col-xs-8 form__item">
+                            <label class="form__label" for="country">země</label>
+                            <input type="text" class="form-control form__input" id="country" pattern="[a-zá-žA-ZÁ-Ž ]+">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-6 col-xs-12 form__item">
+                            <label class="form__label form__label--required" for="email">email</label>
+                            <input type="email" class="form-control form__input" id="email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-6 col-xs-12 form__item">
+                            <label class="form__label" for="phone">telefon</label>
+                            <input type="text" class="form-control form__input" id="phone" pattern="^\+?[\d ]+">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shopping-cart__forms col-lg-10 col-lg-offset-1 col-xs-12 is-hidden">
+                    <div class="form-group">
+                        <div class="col-sm-6 col-xs-12 form__item">
+                            <label class="form__label" for="firmName">firma</label>
+                            <input type="text" class="form-control form__input" id="firmName" pattern="[a-zá-žA-ZÁ-Ž]+">
+                        </div>
+                        <div class="col-sm-3 col-xs-6 form__item">
+                            <label class="form__label" for="ic">IČ</label>
+                            <input type="text" class="form-control form__input" id="ic" pattern="[a-zá-žA-ZÁ-Ž\d ]+">
+                        </div>
+                    
+                        <div class="col-sm-3 col-xs-6 form__item">
+                            <label class="form__label" for="dic">DIČ</label>
+                            <input type="text" class="form-control form__input" id="dic" pattern="[a-zá-žA-ZÁ-Ž\d ]+">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shopping-cart__forms col-lg-10 col-lg-offset-1 col-xs-12">
+                    <div class="form-group"> 
+                        <div class="col-xs-12 checkbox form__item">
+                            <label><input type="checkbox"> nakupuji na firmu</label>
+                        </div>
+                        <div class="col-xs-12 checkbox form__item">
+                            <label><input type="checkbox"> dodací adresa je odlišná</label>
+                        </div>
+                    </div> 
+                </div>
+
+                
+
+                <div class="shopping-cart__forms col-lg-10 col-lg-offset-1 col-xs-12 is-hidden">
+                    <h2 class="col-xs-12 form__header">Dodací adresa</h2>
+                    <div class="form-group">
+                        <div class="col-sm-6 col-xs-12 form__item">
+                            <label class="form__label" for="firmName">firma</label>
+                            <input type="text" class="form-control form__input" id="firmName" pattern="[a-zá-žA-ZÁ-Ž]+">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-6 col-xs-12 form__item">
+                            <label class="form__label" for="firstName">jméno</label>
+                            <input type="text" class="form-control form__input" id="firstName" pattern="[a-zá-žA-ZÁ-Ž]+">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-6 col-xs-12 form__item">
+                            <label class="form__label" for="secondName">příjmení</label>
+                            <input type="text" class="form-control form__input" id="secondName" pattern="[a-zá-žA-ZÁ-Ž]+">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-6 ol-xs-12 form__item">
+                            <label class="form__label" for="street">ulice</label>
+                            <input type="text" class="form-control form__input" id="street" pattern="[a-zá-žA-ZÁ-Ž]+">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-6 col-xs-12 form__item">
+                            <label class="form__label form__label--required" for="city">obec</label>
+                            <input type="email" class="form-control form__input" id="city" pattern="[a-zá-žA-ZÁ-Ž ]+">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-2 col-xs-4 form__item">
+                            <label class="form__label" for="zip">PSČ</label>
+                            <input type="text" class="form-control form__input" id="zip" pattern="[\d ]+">
+                        </div>
+                        <div class="col-sm-4 col-xs-8 form__item">
+                            <label class="form__label" for="country">země</label>
+                            <input type="text" class="form-control form__input" id="country" pattern="[a-zá-žA-ZÁ-Ž ]+">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shopping-cart__forms col-lg-10 col-lg-offset-1 col-xs-12">
+                    <h2 class="col-xs-12 form__header">Další údaje</h2>
+                    <div class="form-group">
+                        <div class="col-xs-12 form__item">
+                            <label class="form__label" for="question">poznámka</label>
+                            <textarea class="form-control form__textarea" rows="6" cols="50" id="question"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shopping-cart__forms col-lg-5 col-lg-offset-1 col-sm-6 col-xs-12">
+                    <h2 class="col-xs-12 form__header">Výběr platby</h2>
+                    <div class="col-xs-12 radio form__item">
+                        <label><input type="radio">Dobírka</label>
+                    </div>
+                    <div class="col-xs-12 radio form__item">
+                        <label><input type="radio">Bankovní převod</label>
+                    </div>
+                </div>
+                <div class="shopping-cart__forms col-sm-6 col-xs-12">
+                    <h2 class="col-xs-12 form__header">Výběr dodání</h2>
+                    <div class="col-xs-12 radio form__item">
+                        <label><input type="radio">Česká pošta</label>
+                    </div>
+                    <div class="col-xs-12 radio form__item">
+                        <label><input type="radio">Doručení kurýrní službou</label>
+                    </div>
+                </div>
+
+                <form class="shopping-cart__total form">
+                    <div class="buy-button"><i class="icon cart-full_white" aria-hidden></i>ZOBRAZIT KOŠÍK</div><br />
+                    <button type="submit" class="form__submit"><a href="cart.3.html">Přejít ke kontrole údajů</a></button>
+                </form>
+
+
+            </div>
+        </div>    
+
+    </div>
+    
+    <footer class="container-fluid footer">
+            <div class="footer__links row">
+                <div class="col-md-4 row footer-column">
+                    <div class="col-sm-12 col-md-6 footer-column">
+                        <h3 class="footer-column__category">Hlavní menu
+                            <span class="svg-plus-footer">
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </h3>
+                        <ul class="footer-column__list footer__collapsible">
+                            <li class="footer-column__list-item">
+                                <a href="/index.html">Home</a>
+                            </li>
+                            <li class="footer-column__list-item">
+                                <a href="/products.html">Produkty</a>
+                            </li>
+                            <li class="footer-column__list-item">Služby</li>
+                            <li class="footer-column__list-item">Volná místa</li>
+                            <li class="footer-column__list-item">O nás</li>
+                            <li class="footer-column__list-item">E-shop</li>
+                            <li class="footer-column__list-item">Obchodní podmínky</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 footer-column">
+                        <h3 class="footer-column__category">Můj účet
+                            <span class="svg-plus-footer">
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </h3>
+                        <ul class="footer-column__list footer__collapsible">
+                            <li class="footer-column__list-item">
+                                <a href="/account.1.html">Profil</a>
+                            </li>
+                            <li class="footer-column__list-item">Adresy</li>
+                            <li class="footer-column__list-item">Historie</li>
+                            <li class="footer-column__list-item">
+                                <a href="/cart.1.html">Košík</a>
+                            </li>
+                            <li class="footer-column__list-item">
+                                <a href="/account.2.html">Platby</a>
+                            </li>
+                            <li class="footer-column__list-item">Zapomenuté heslo</li>
+                            <li class="footer-column__list-item">Zasílání novinek</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 footer-column footer-column--logo" style="background-image: url('images/logo-2.png');">
+                    <h3 class="footer-column__category">RENOMAG spol. s r. o.
+                        <span class="svg-plus-footer">
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </h3>
+                    <div class="footer__collapsible">
+                        <address class="footer-column__text">
+                            <strong>Adresa sídla společnosti:</strong>
+                            <br> Cukrovar 1266, Rosice, 664 84 Zastávka u Brna
+                            <br>
+                            <strong>Tel.:</strong> +420 546 411 678, +420 546 410 078
+                            <br>
+                            <strong>ZELENÁ LINKA 800 100 943</strong>
+                            <br>
+                            <strong>E-mail:</strong> renomag@renomag.cz
+                            <br>
+                            <strong>IČO:</strong> 49444557
+                            <strong>Registrace:</strong> 12153, oddíl C u Obchodního
+                            <br> rejstříku vedeného Krajským soudem v Brně.</address>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 footer-column footer-column--logo" style="background-image: url('images/logo-sk.png')">
+                    <h3 class="footer-column__category">RENOMAG SLOVAKIA s. r. o.
+                        <span class="svg-plus-footer">
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </h3>
+                    <address class="footer-column__text footer__collapsible">
+                        <strong>Adresa sídla společnosti:</strong>
+                        <br> Kopčianska 63, 851 01 Bratislava
+                        <br>
+                        <strong>Tel.:</strong> +421 911 401 402, +421 903 404 332
+                        <br>
+                        <strong>E-mail:</strong> info@renomagslovakia.cz
+                        <br>
+                        <strong>IČO:</strong> 43856951
+                        <strong>Registrace:</strong> Zapsaná v Obchodním rejstříku
+                         Okresního soudu Bratislava I, oddíl: Sro, složka č. 85397/B.</address>
+                </div>
+                <div class="row col-sm-12  ">
+                    <div class="col-sm-12 col-md-4 col-md-push-4  footer__social">
+                        <a href="#">
+                            <i class="fa fa-youtube fa-2x"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-instagram fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-12 row footer__bottom">
+                    <div class="col-md-8 footer__copy">
+                        <p>
+                            © Renomag | Provozováno na systému
+                            <a href="http://www.majorshop.cz/" title="MajorShop v2.11.2">MajorShop</a> | Designed by
+                            <a href="http://www.elisiondesign.cz">Elision Design</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 footer__sortiment">
+                        <img src="images/sortiment.png" alt="sortiment">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <script src="script/svg_ie.js" type="text/javascript"></script>
+    <script src="script/jquery.js" type="text/javascript"></script>
+    <script src="script/nouislider.min.js"></script>
+    <script src="script/lightbox.js" type="text/javascript"></script>
+    <script src="script/helpers.js" type="text/javascript"></script>
+    <script src="script/wallop.js" type="text/javascript"></script>
+    <script src="script/script.js" type="text/javascript"></script>
+</body>
+
+</html>

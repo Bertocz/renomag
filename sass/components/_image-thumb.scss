@@ -1,0 +1,37 @@
+.image-thumb {
+    height: 16rem;
+    margin-bottom: 3rem;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    @media (max-width: 470px){
+        height: 10rem;
+    }
+
+    &:hover {
+        opacity: .7;
+    }
+
+    &--small {
+        height: 7rem;
+
+        @media (min-width: 460px){
+        height: 10rem;
+        }
+
+         @media (min-width: 768px){
+        height: 6rem;
+        }
+
+        @media (min-width: 1000px){
+        height: 8rem;
+        }
+
+        @media (min-width: 1400px){
+        height: 10rem;
+        }
+
+    }
+}

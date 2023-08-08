@@ -1,0 +1,34 @@
+// To make 5 column grid
+.grid-five-xs,
+.grid-five-sm,
+.grid-five-md,
+.grid-five-lg {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.grid-five-xs {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+	.grid-five-sm {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .grid-five-md {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .grid-five-lg {
+        width: 20%;
+        float: left;
+    }
+}
+

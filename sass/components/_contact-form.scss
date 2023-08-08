@@ -1,0 +1,55 @@
+.contact-form {
+    transform: scale(0.9);
+    display: none;
+    position: fixed;
+    bottom: 12px;
+    right: 1.2%;   
+    max-width: 400px;
+    width: 97%;
+    padding: 2rem;
+    background-color: $black;
+    z-index: 99;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.6);
+    color: $white;
+
+    @media (min-width: 380px){
+        right: 1.5%; 
+    }
+    @media (min-width: 460px){
+        right: 20px;
+    }
+
+    &__phone {
+        h3 {
+            font-size: 1.9rem;
+            margin-top: 1rem;
+            color: $white;
+        }
+
+        p {
+            font-size: 1.9rem;
+            margin-bottom: 1.6rem;
+            margin-top: 1.6rem;
+        }     
+    }
+
+
+    .form__submit{
+        float: right;
+        font-size: 1.9rem;
+        transition: color .2s;
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    .form__link {        
+        margin-top: 0;
+        @include links($red,$red,$white,$white);
+    }
+
+    &--show {
+        opacity: 0;        
+    }
+}
