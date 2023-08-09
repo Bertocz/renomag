@@ -1,6 +1,6 @@
 .divider{
     display: block;
-    border-top: 2px solid $light-grey - 70;
+    border-top: 2px solid $light-grey; /* -70 */
     margin-left: 15px;    
     width: calc(100% - 30px);
     padding: 0;

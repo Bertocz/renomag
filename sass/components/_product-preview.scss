@@ -54,6 +54,27 @@
         color: $red !important;
         font-weight: 700;
         font-size: $base-font-size;
+
+        display:flex;
+        justify-content: space-between;
+        white-space:nowrap;
+    }
+
+    &__discount{
+        margin-bottom: 0;
+        position:relative;
+        white-space:nowrap;
+
+        &:before {
+            content:'';
+            background:transparent url('../images/sleva.png') center center no-repeat;
+            background-size:contain;
+            width:25px;
+            height:25px;
+            position:absolute;
+            bottom:20px;
+            right:2px;
+        }
     }
 
     &__code {

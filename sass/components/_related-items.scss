@@ -9,7 +9,7 @@
     &__divider {
         display: block;
         width: 100%;        
-        border-top: 2px solid $light-grey - 70;        
+        border-top: 2px solid $light-grey;     /* -70 */   
         padding: 0;        
     }
 }
