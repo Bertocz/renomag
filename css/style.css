@@ -3079,6 +3079,10 @@ ul.submenu {
   transform: scale(1.1);
 }
 
+.catalog-top-disclaimer p {
+  margin-bottom: 10px;
+}
+
 .styled-checkbox {
   /* Customize the label (the container) */
   display: flex;
