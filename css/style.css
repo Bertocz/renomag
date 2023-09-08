@@ -3079,6 +3079,11 @@ ul.submenu {
   transform: scale(1.1);
 }
 
+.catalog-bottom-disclaimer,
+.catalog-top-disclaimer {
+  font-weight: bold;
+}
+.catalog-bottom-disclaimer p,
 .catalog-top-disclaimer p {
   margin-bottom: 10px;
 }
