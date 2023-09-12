@@ -75,6 +75,7 @@
             bottom:20px;
             right:2px;
         }
+        display:none;
     }
 
     &__code {
@@ -110,5 +111,25 @@
 
     &:hover * {       
         color: white;
+    }
+    .discount-icon {
+        width:40px;
+        height:40px;
+        position:relative;
+        left:15px;
+        top:10px;
+
+        &.type-discount {
+            background:transparent url('../images/Sleva2.png') center center no-repeat;
+            background-size:contain;
+        }
+        &.type-action {
+            background:transparent url('../images/Akce.png') center center no-repeat;
+            background-size:contain;
+        }
+        &.type-selloff {
+            background:transparent url('../images/Vyprodej.png') center center no-repeat;
+            background-size:contain;
+        }
     }
 }

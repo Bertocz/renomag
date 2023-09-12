@@ -1812,6 +1812,26 @@ ul.submenu {
   line-height: 2.6rem;
   font-size: 1.575rem;
   padding: 0;
+  position: relative;
+}
+.product__summary .discount-icon {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  right: 40px;
+  bottom: -5px;
+}
+.product__summary .discount-icon.type-discount {
+  background: transparent url("../images/Sleva2.png") center center no-repeat;
+  background-size: contain;
+}
+.product__summary .discount-icon.type-action {
+  background: transparent url("../images/Akce.png") center center no-repeat;
+  background-size: contain;
+}
+.product__summary .discount-icon.type-selloff {
+  background: transparent url("../images/Vyprodej.png") center center no-repeat;
+  background-size: contain;
 }
 .product__subheader {
   color: #222;
@@ -2681,6 +2701,7 @@ ul.submenu {
   margin-bottom: 0;
   position: relative;
   white-space: nowrap;
+  display: none;
 }
 .product-preview__discount:before {
   content: "";
@@ -2719,6 +2740,25 @@ ul.submenu {
 }
 .product-preview:hover * {
   color: white;
+}
+.product-preview .discount-icon {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  left: 15px;
+  top: 10px;
+}
+.product-preview .discount-icon.type-discount {
+  background: transparent url("../images/Sleva2.png") center center no-repeat;
+  background-size: contain;
+}
+.product-preview .discount-icon.type-action {
+  background: transparent url("../images/Akce.png") center center no-repeat;
+  background-size: contain;
+}
+.product-preview .discount-icon.type-selloff {
+  background: transparent url("../images/Vyprodej.png") center center no-repeat;
+  background-size: contain;
 }
 
 .divider {
@@ -3086,6 +3126,10 @@ ul.submenu {
 .catalog-bottom-disclaimer p,
 .catalog-top-disclaimer p {
   margin-bottom: 10px;
+}
+
+.catalog-bottom-disclaimer p {
+  margin-bottom: 0px;
 }
 
 .styled-checkbox {

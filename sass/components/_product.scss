@@ -129,6 +129,28 @@
 		line-height: 2.6rem;
 		font-size: $h4;
 		padding: 0;
+		position:relative;
+
+	    .discount-icon {
+	        width:70px;
+	        height:70px;
+	        position:absolute;
+	        right:40px;
+	        bottom:-5px;
+
+	        &.type-discount {
+	            background:transparent url('../images/Sleva2.png') center center no-repeat;
+	            background-size:contain;
+	        }
+	        &.type-action {
+	            background:transparent url('../images/Akce.png') center center no-repeat;
+	            background-size:contain;
+	        }
+	        &.type-selloff {
+	            background:transparent url('../images/Vyprodej.png') center center no-repeat;
+	            background-size:contain;
+	        }
+	    }		
 	}
 
 	&__subheader{
